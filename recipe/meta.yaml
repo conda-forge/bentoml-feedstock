@@ -30,12 +30,15 @@ requirements:
     - aiohttp <=3.8.1
     - attrs >=21.1.0
     - backports.cached-property
-    - cattrs >=21.1.0
+    # NOTE: cattrs has not been updated (last version: 1.10.0)
+    # - cattrs >=21.1.0
+    - cattrs >=1.10.0
     - chardet
     - circus
     - click >=7.0
     - cloudpickle
     - deepmerge
+    # NOTE: exceptiongroup is available on channel: conda-forge/label/exceptiongroup_dev
     - exceptiongroup
     - filelock
     - fs
