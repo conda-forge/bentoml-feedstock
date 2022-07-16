@@ -70,11 +70,11 @@ requirements:
     - starlette
     - typing-extensions >=4.0
     ## Converting the recipe to noarch: only build for python>=3.7
-    # - contextvars  # [py<37]
-    # - dataclasses  # [py<37]
     # - backports.cached-property  # [py<38]
     # - exceptiongroup  # [py<=311]
     # - importlib-metadata  # [py<38]
+    ## The following is necessary to pass pip-check
+    - uvicorn
 
 test:
   imports:
