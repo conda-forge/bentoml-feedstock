@@ -23,9 +23,7 @@ requirements:
     - python >=3.7
     - setuptools >=59.0
     - setuptools-scm >=6.2.3
-    - wheel
-    # necessary for passing build error
-    - exceptiongroup    
+    - wheel  
   run:
     - python >=3.7
     - aiofiles
