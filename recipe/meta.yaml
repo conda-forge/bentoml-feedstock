@@ -14,7 +14,7 @@ build:
   number: 0
   noarch: python
   entry_points:
-    - bentoml = bentoml._internal.cli:cli
+    - bentoml=bentoml._internal.cli:cli
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
