@@ -30,9 +30,7 @@ requirements:
     - aiohttp <=3.8.1
     - attrs >=21.1.0
     - backports.cached-property
-    # NOTE: cattrs has not been updated (last version: 1.10.0)
-    # - cattrs >=21.1.0
-    - cattrs >=1.10.0
+    - cattrs >=21.1.0
     - chardet
     - circus
     - click >=7.0
@@ -80,7 +78,7 @@ test:
   imports:
     - bentoml
   commands:
-    # - pip check
+    - pip check
     - bentoml --help
   requires:
     - pip
