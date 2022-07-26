@@ -1,0 +1,7 @@
+channel_sources:
+# Reason for adding extra channels
+# - exceptiongroup:
+#   - reason: not available on conda-forge 
+#   - channel: conda-forge/label/exceptiongroup_dev
+#   - source: https://anaconda.org/conda-forge/exceptiongroup
+- conda-forge/label/exceptiongroup_dev,conda-forge

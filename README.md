@@ -7,7 +7,7 @@ Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bentoml-feedstock/blob/main/LICENSE.txt)
 
-Summary: A framework for machine learning model serving
+Summary: Bentoml: The Unified Model Serving Framework
 
 Development: https://github.com/bentoml/BentoML
 
