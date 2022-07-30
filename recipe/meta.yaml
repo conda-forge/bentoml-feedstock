@@ -1,5 +1,5 @@
 {% set name = "bentoml" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bentoml-{{ version }}.tar.gz
-  sha256: 6bc4a4bb8f53b6ee70d1169ee439d89680f96771fbb3f11fb5eba13f96598c88
+  sha256: afe2d071fa2141b0df10ced675dfada03148c0399ed224a2120c424d6b6b812b
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - python >=3.7
     - setuptools >=59.0
     - setuptools-scm >=6.2.3
-    - wheel  
+    - wheel
   run:
     - python >=3.7
     - aiofiles
