@@ -13,17 +13,17 @@ build:
   entry_points:
     - bentoml = bentoml_cli.cli:cli
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - hatchling
     - hatch-vcs >=0.3.0
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - jinja2 >=3.0.1
     - pyyaml >=5.0
     - aiohttp
@@ -60,15 +60,12 @@ requirements:
     - starlette >=0.13.5
     - uvicorn
     - watchfiles >=0.15.0
-    ## Converting the recipe to noarch: only build for python>=3.7
-    - backports.cached-property
-    - exceptiongroup
-    - importlib-metadata
 
 test:
   imports:
     - bentoml
   commands:
+    - pip check
     - bentoml --help
   requires:
     - pip
@@ -88,6 +85,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - sugatoray
     - rxm7706
+    - sugatoray
     # co-maintainers from upstream
