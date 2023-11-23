@@ -1,5 +1,5 @@
 {% set name = "bentoml" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bentoml-{{ version }}.tar.gz
-  sha256: 4bd023224b058ef29fa432e18652403cf40f0e45adc8a2f9ce93118bd96cd989
+  sha256: 96017e84772751a1ca022d1f7786882072205c706ca75762fd181bdc9f5ca4fa
 
 build:
   entry_points:
@@ -28,28 +28,30 @@ requirements:
     - pyyaml >=5.0
     - aiohttp
     - attrs >=21.1.0
-    - cattrs >=22.1.0
+    - cattrs >=22.1.0,<23.2.0
     - circus >=0.17.0,!=0.17.2
     - click >=7.0
     - click-option-group
-    - cloudpickle
+    - cloudpickle >=2.0.0
     - deepmerge
     - fs
+    - httpx
+    - inflection
     - numpy
-    - opentelemetry-api ==1.18.0
-    - opentelemetry-sdk ==1.18.0
-    - opentelemetry-instrumentation ==0.39b0
-    - opentelemetry-instrumentation-aiohttp-client ==0.39b0
-    - opentelemetry-instrumentation-asgi ==0.39b0
-    - opentelemetry-semantic-conventions ==0.39b0
-    - opentelemetry-util-http ==0.39b0
+    - nvidia-ml-py <12
+    - opentelemetry-api ==1.20.0
+    - opentelemetry-sdk ==1.20.0
+    - opentelemetry-instrumentation ==0.41b0
+    - opentelemetry-instrumentation-aiohttp-client ==0.41b0
+    - opentelemetry-instrumentation-asgi ==0.41b0
+    - opentelemetry-semantic-conventions ==0.41b0
+    - opentelemetry-util-http ==0.41b0
     - packaging >=22.0
     - pathspec
     - pip-tools >=6.6.2
     - pip-requirements-parser >=31.2.0
     - prometheus_client >=0.10.0
     - psutil
-    - pynvml <12
     - python-dateutil
     - python-multipart
     - python-json-logger
@@ -57,7 +59,7 @@ requirements:
     - rich >=11.2.0
     - schema
     - simple-di >=0.1.4
-    - starlette >=0.13.5,<0.29
+    - starlette >=0.13.5
     - uvicorn
     - watchfiles >=0.15.0
 
