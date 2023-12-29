@@ -14,7 +14,7 @@ build:
     - bentoml = bentoml_cli.cli:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -59,7 +59,7 @@ requirements:
     - rich >=11.2.0
     - schema
     - simple-di >=0.1.4
-    - starlette >=0.13.5
+    - starlette >=0.24.0
     - uvicorn
     - watchfiles >=0.15.0
 
