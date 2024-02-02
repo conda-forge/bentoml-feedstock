@@ -1,5 +1,5 @@
 {% set name = "bentoml" %}
-{% set version = "1.1.11" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bentoml-{{ version }}.tar.gz
-  sha256: ac2ab7543b7409e3daf49ccee21e816f95a90a8d1f9682662ef752f56cb13672
+  sha256: ba8ca221e7253d14b1a35ac1f4b38075e3034a66c1ca2e2692b4425cdf8e2bda
 
 build:
   entry_points:
     - bentoml = bentoml_cli.cli:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -52,6 +52,7 @@ requirements:
     - pip-requirements-parser >=31.2.0
     - prometheus_client >=0.10.0
     - psutil
+    - pydantic <3
     - python-dateutil
     - python-multipart
     - python-json-logger
