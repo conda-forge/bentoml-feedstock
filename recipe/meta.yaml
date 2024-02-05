@@ -1,5 +1,5 @@
 {% set name = "bentoml" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bentoml-{{ version }}.tar.gz
-  sha256: 9ec65cd5037dde7b095dc79a143e7af042777dcff5a0430ac7e29c4e876981b9
+  sha256: 5fc96db3268d63880a01d0b555fda0c8dd7e57274d2c6c2c6385450d3ea7f4fc
 
 build:
   entry_points:
