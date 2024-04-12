@@ -1,5 +1,5 @@
 {% set name = "bentoml" %}
-{% set version = "1.2.9" %}
+{% set version = "1.2.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bentoml-{{ version }}.tar.gz
-  sha256: 8d96f16a77e81228872042df286eccb8fe35b507f1847b709ad39778b6edc9ca
+  sha256: fddfac67039557c8c02a95e9d21702a3702c217ba9ef51b83b61465eb14dab8a
 
 build:
   entry_points:
@@ -27,7 +27,7 @@ requirements:
     - jinja2 >=3.0.1
     - pyyaml >=5.0
     - aiohttp
-    - attrs >=21.1.0
+    - attrs >=22.2.0
     - cattrs >=22.1.0,<23.2.0
     - circus >=0.17.0,!=0.17.2
     - click >=7.0
@@ -56,13 +56,15 @@ requirements:
     - python-dateutil
     - python-multipart
     - python-json-logger
-    - requests
+    - requests # No Longer in source
     - rich >=11.2.0
     - schema
     - simple-di >=0.1.4
     - starlette >=0.24.0
     - uvicorn
     - watchfiles >=0.15.0
+    - tomli >=1.1.0
+    - tomli-w
 
 test:
   imports:
