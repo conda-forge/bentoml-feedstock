@@ -27,7 +27,7 @@ requirements:
     - jinja2 >=3.0.1
     - pyyaml >=5.0
     - aiohttp
-    - attrs >=21.1.0
+    - attrs >=22.2.0
     - cattrs >=22.1.0,<23.2.0
     - circus >=0.17.0,!=0.17.2
     - click >=7.0
@@ -56,13 +56,15 @@ requirements:
     - python-dateutil
     - python-multipart
     - python-json-logger
-    - requests
+    - requests # No Longer in source
     - rich >=11.2.0
     - schema
     - simple-di >=0.1.4
     - starlette >=0.24.0
     - uvicorn
     - watchfiles >=0.15.0
+    - tomli >=1.1.0
+    - tomli-w
 
 test:
   imports:
