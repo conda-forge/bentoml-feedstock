@@ -1,5 +1,5 @@
 {% set name = "bentoml" %}
-{% set version = "1.2.17" %}
+{% set version = "1.2.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/bentoml-{{ version }}.tar.gz
-  sha256: 72f57208b2fcbaa43bf7e5e93624403db0b81a507062a6e4a092e7dbbffe10ac
+  sha256: 1a94ada8dcf04236e378670bdd0c36bafeadfdb845eb8aa166964d795f021cb1
 
 build:
   entry_points:
@@ -61,10 +61,11 @@ requirements:
     - schema
     - simple-di >=0.1.4
     - starlette >=0.24.0
-    - uvicorn
+    - uvicorn >=0.22.0
     - watchfiles >=0.15.0
     - tomli >=1.1.0
     - tomli-w
+    - httpx-ws >=0.6.0
 
 test:
   imports:
