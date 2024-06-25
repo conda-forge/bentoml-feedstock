@@ -61,10 +61,11 @@ requirements:
     - schema
     - simple-di >=0.1.4
     - starlette >=0.24.0
-    - uvicorn
+    - uvicorn >=0.22.0
     - watchfiles >=0.15.0
     - tomli >=1.1.0
     - tomli-w
+    - httpx-ws >=0.6.0
 
 test:
   imports:
