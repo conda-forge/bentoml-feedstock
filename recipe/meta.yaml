@@ -68,7 +68,7 @@ requirements:
     - a2wsgi >=1.10.7
     - fsspec >=2025.7.0
     - rich-toolkit >=0.15.1
-    - aiohttp-asgi-connector >=1.1.2 Pending https://github.com/conda-forge/staged-recipes/pull/31702
+    - aiohttp-asgi-connector >=1.1.2
 
 test:
   imports:
